@@ -1499,6 +1499,37 @@ p {
   color: #fff;
 }
 
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.small-image {
+  width: 30%;
+}
+.image-container img {
+  margin: 1px;
+  padding: 8px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .image-container img {
+    width: 47%;
+  }
+}
+
+@media (max-width: 768px) {
+  .big-image {
+    width: 100% !important;
+  }
+}
+
+.big-image {
+  width: 60%;
+}
+
 /*====================== Team =====================*/
 .team {
   padding-top: 63px;
@@ -2584,13 +2615,13 @@ footer .bottom_footer a:focus {
   line-height: 23px;
   margin-bottom: 19px;
 }
-.experts_planning ul li:before {
+/* .experts_planning ul li:before {
   content: "";
   font-family: "font-awesome";
   color: #1a8bb3;
   position: absolute;
   left: 0;
-}
+} */
 .experts_planning ul li a {
   color: #9b9b9b;
   font-size: 14px;
@@ -4069,11 +4100,12 @@ article.news_post .pagination_menu .pagination {
   font-weight: 700;
 }
 .contact_text .contact_num {
-  background: url(../../images/contact/1.html) no-repeat right top;
+  background: url(../../images/home/contactus.jpeg) no-repeat right top;
   background-color: #f4f4f4;
   margin-top: 33px;
   padding-left: 6px;
   padding-right: 105px;
+  height: 140px;
 }
 .contact_text .contact_num p {
   float: right;
