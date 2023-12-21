@@ -949,6 +949,7 @@ p {
 }
 .banner .tp-leftarrow,
 .banner .tp-rightarrow {
+  display: none;
   width: 60px;
   height: 60px;
   background: #fff;
@@ -977,20 +978,20 @@ p {
 .banner .tp-leftarrow:hover:before {
   color: #fff;
 }
-.tparrows:before {
+/* .tparrows:before {
   font-family: "font-awesome";
   font-size: 21px;
   color: #fff;
   display: block;
   line-height: 52px;
   text-align: center;
-}
-.tparrows.tp-rightarrow:before {
+} */
+/* .tparrows.tp-rightarrow:before {
   content: "\f054";
 }
 .tparrows.tp-leftarrow:before {
   content: "\f053";
-}
+} */
 .banner .tp-bullet,
 .banner .tp-bullet.selected {
   width: 14px;
