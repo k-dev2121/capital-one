@@ -680,6 +680,18 @@
     text-align: center;
   }
   .banner #main_slider ul li .tp-caption {
+    display: block;
+  }
+  .tp-caption h1 {
+    font-size: 28px !important;
+    line-height: 30px !important;
+  }
+
+  .tp-caption {
+    padding-left: 10px !important;
+  }
+
+  .tp-caption p {
     display: none;
   }
 }
