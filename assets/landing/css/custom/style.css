@@ -667,7 +667,7 @@ p {
 }
 
 .bottom_header .address_container {
-  padding-left: 20px;
+  /* padding-left: 20px; */
   padding-top: 15px;
 }
 .bottom_header .address_container > div {
@@ -679,9 +679,9 @@ p {
 .bottom_header .address_container > div:nth-child(3) {
   padding-left: 30px;
 }
-.bottom_header .address_container .icon_holder {
+/* .bottom_header .address_container .icon_holder {
   display: inline-block;
-  width: 58px;
+  width: 38px;
   height: 48px;
   background: #1a8bb3;
   border: 6px solid #eaedf0;
@@ -691,7 +691,7 @@ p {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   vertical-align: 15px;
-}
+} */
 .bottom_header .address_container .icon_holder span {
   display: block;
   padding-top: 6px;
@@ -901,7 +901,7 @@ p {
   font-family: "Alegreya", serif;
   font-weight: 700;
   font-size: 24px;
-  color: #1a8bb3;
+  color: white !important;
   text-transform: capitalize;
 }
 .banner .slide_show h1 {
@@ -1320,7 +1320,7 @@ p {
   padding-left: 18px;
   position: relative;
 }
-.people_choose_us:before {
+/* .people_choose_us:before {
   content: "";
   width: 1px;
   height: 41%;
@@ -1328,7 +1328,7 @@ p {
   position: absolute;
   top: 45%;
   left: calc(7% + 1px);
-}
+} */
 .people_choose_us h5 {
   font-family: "Alegreya", serif;
   font-weight: normal;
@@ -2162,7 +2162,7 @@ footer .bottom_footer a:focus {
 
 .inner_banner {
   background: #f4f4f4;
-  height: 166px;
+  height: 238px;
   text-align: center;
   padding-top: 34px;
 }
@@ -5208,4 +5208,38 @@ form input:-moz-placeholder {
 .cf-validation input.error,
 .cf-validation textarea.error {
   border-color: red;
+}
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
