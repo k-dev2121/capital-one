@@ -1464,6 +1464,17 @@ p {
   -o-transform: scale(1);
 }
 
+.nav_small {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav_small {
+    justify-content: center;
+  }
+}
 /*================= Parallax Section ================*/
 
 .parallax {
